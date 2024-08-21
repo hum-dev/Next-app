@@ -2,7 +2,7 @@
 export default function About() {
   return (
     <div className="max-w-6xl mx-auto p-3 space-y-5">
-      <h1 className="text-2xl font-medium text-amber-600">About</h1>
+      <h1 className="text-2xl font-medium text-blue-600">About</h1>
       <p>
         {" "}
         Welcome to HMDB MOVIES, your ultimate destination for all things movies!

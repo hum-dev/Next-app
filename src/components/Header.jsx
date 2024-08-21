@@ -15,7 +15,7 @@ export default function Header() {
           <div className="flex items-center gap-4">
               <DarkMode />
               <Link href={"/"} className="flex gap-1 items-center">
-                  <span className="text-2xl font-bold bg-amber-500 py-1 px-2 rounded-lg">
+                  <span className="text-2xl font-bold bg-blue-500 py-1 px-2 rounded-lg">
                       HMDB
                   </span>
                   <span className="text-xl hidden sm:inline ">Movie</span>
