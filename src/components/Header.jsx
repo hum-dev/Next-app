@@ -18,7 +18,7 @@ export default function Header() {
                   <span className="text-2xl font-bold bg-amber-500 py-1 px-2 rounded-lg">
                       HMDB
                   </span>
-                  <span className="text-xl hidden sm:inline ">Clone</span>
+                  <span className="text-xl hidden sm:inline ">Movie</span>
               </Link>
           </div>
     </div>
