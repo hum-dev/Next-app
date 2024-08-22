@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "movie-app": "file:",
     "next-themes": "^0.3.0",
     "react": "^18",
     "react-dom": "^18",
