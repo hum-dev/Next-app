@@ -1,6 +1,7 @@
 import React from 'react'
 import Image from 'next/image'
 import { FiThumbsUp } from 'react-icons/fi'
+import { Suspense } from 'react'
 
 export default async function MoviePage({ params }) {
     const movieId = params.id;
@@ -11,6 +12,7 @@ export default async function MoviePage({ params }) {
 
     return (
         <div className="w-full">
+            <Suspense>
             <div className="p-4 md:pt-8 flex flex-col md:flex-row content-center max-w-6xl mx-auto md:space-x-6">
                 {imagePath ? (
                     <Image
@@ -38,7 +40,8 @@ export default async function MoviePage({ params }) {
                         {movie.vote_count}
                     </p>
                 </div>
-            </div>
+                </div>
+                </Suspense>
         </div>
     );
 }

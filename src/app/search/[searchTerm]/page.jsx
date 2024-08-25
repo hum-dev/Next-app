@@ -1,6 +1,7 @@
 
 import Results from '@/components/Results';
-import React from 'react'
+import React, { Suspense } from 'react'
+
 
 export default async function SearchPage({ params }) {
     const SearchTerm = params.SearchTerm;
@@ -10,13 +11,15 @@ export default async function SearchPage({ params }) {
     const data = await res.json();
     const results= data.results
   return (
-      <div>
+    <div>
+      <Suspense>
       {
         results && results.length === (
           <h1 className='text-centre pt-6'> No results found</h1>
         )
       }
-      {results && <Results results={results}/>}
+      {results && <Results results={results} />}
+      </Suspense>
       </div>
   )
 }
