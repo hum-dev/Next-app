@@ -17,12 +17,9 @@ import { useSearchParams } from 'next/navigation'
 import { Suspense } from 'react'
 
 // Function to get search parameters
-function SearchParam() {
-    return useSearchParams();
-}
 
 function NavbarItem({ title, param }) {
-    const searchParams = searchParam();
+    const searchParams = searchParams();
     const genre = searchParams.get('genre');
     return (
         <div>
