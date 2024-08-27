@@ -1,6 +1,6 @@
 
 
-import Image from 'your-image-library'; // Replace 'your-image-library' with the actual library you are using for the Image component.
+import Image from "next/image"; // Replace 'your-image-library' with the actual library you are using for the Image component.
 
 export default function loading() {
   return (
